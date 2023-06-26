@@ -6,7 +6,7 @@ import { images } from "../../constants";
 const Chef = () => (
   <div className="app__bg app__wrapper section__padding">
     <div className="app__wrapper_img app__wrapper_img-reverse ">
-      <img src={images.chef} alt="chef" />
+      <img src={images.Jane} alt="chef" />
     </div>
 
     <div className="app__wrapper_info">
@@ -23,12 +23,10 @@ const Chef = () => (
             nunc.
           </p>
         </div>
-
-        
       </div>
 
       <div className="app__chef-sign">
-        <p className="kevin">Kevin Luo</p>
+        <p className="kevin">Jane Bush</p>
         <p className="p__openSans">chef & Founder</p>
         <img
           src={images.sign}

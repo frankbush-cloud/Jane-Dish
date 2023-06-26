@@ -1,0 +1,38 @@
+[debug] [2023-06-26T10:27:38.467Z] ----------------------------------------------------------------------
+[debug] [2023-06-26T10:27:38.470Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2023-06-26T10:27:38.470Z] CLI Version:   12.4.0
+[debug] [2023-06-26T10:27:38.471Z] Platform:      win32
+[debug] [2023-06-26T10:27:38.471Z] Node Version:  v18.16.0
+[debug] [2023-06-26T10:27:38.479Z] Time:          Mon Jun 26 2023 13:27:38 GMT+0300 (East Africa Time)
+[debug] [2023-06-26T10:27:38.479Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2023-06-26T10:27:38.588Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-06-26T10:27:38.589Z] > authorizing via signed-in user (frankbush979@gmail.com)
+[debug] [2023-06-26T10:27:38.589Z] [iam] checking project jane-restaurant for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2023-06-26T10:27:38.591Z] > refreshing access token with scopes: []
+[debug] [2023-06-26T10:27:38.594Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-26T10:27:38.594Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-26T10:27:38.722Z] [iam] error while checking permissions, command may fail: FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-06-26T10:27:38.722Z] > refreshing access token with scopes: []
+[debug] [2023-06-26T10:27:38.723Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2023-06-26T10:27:38.723Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2023-06-26T10:27:38.731Z] Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+[debug] [2023-06-26T10:27:38.751Z] FirebaseError: Authentication Error: Your credentials are no longer valid. Please run firebase login --reauth
+
+For CI servers and headless environments, generate a new token with firebase login:ci
+    at invalidCredentialError (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:144:12)
+    at refreshTokens (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\auth.js:508:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+    at async Client.getAccessToken (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:149:23)
+    at async Client.addAuthHeader (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:140:21)
+    at async Client.request (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:96:34)
+    at async getFirebaseProject (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\management\projects.js:295:21)
+    at async getDefaultHostingSite (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\getDefaultHostingSite.js:10:21)
+    at async requireHostingSite (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireHostingSite.js:9:18)
+    at async Object.fn (C:\Users\USER\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\deploy.js:74:9)
+[error] 
+[error] Error: Failed to get Firebase project jane-restaurant. Please make sure the project exists and your account has permission to access it.

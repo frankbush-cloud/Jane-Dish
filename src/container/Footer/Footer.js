@@ -12,9 +12,9 @@ const Footer = () => (
     <div className="app__footer-links">
       <div className="app__footer-links_contact">
         <h1 className="app__footer-headtext">Contact Us</h1>
-        <p className="p__openSans">9 w 53rd St, NewYork 10091, USA</p>
-        <p className="p__openSans">+212-344-1230</p>
-        <p className="p__openSans">+212-344-1230</p>
+        <p className="p__openSans">9 w 53rd Street 10091, Kenya</p>
+        <p className="p__openSans">+254 -728110299</p>
+        <p className="p__openSans">+254 726289097</p>
       </div>
       <div className="app__footer-links_logo">
         <img src={images.gericht} alt="footer logo" />
@@ -46,7 +46,7 @@ const Footer = () => (
     </div>
 
     <div className="footer__copyright">
-      <p className="p__openSans">2021 Gericht. All Rights</p>
+      <p className="p__openSans">2021 JaneBush. All Rights</p>
     </div>
   </div>
 );
